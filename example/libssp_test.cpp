@@ -1,4 +1,4 @@
-#define _GLIBCXX_USE_CXX11_ABI 1
+#define _GLIBCXX_USE_CXX11_ABI 0
 #include <functional>
 #include <memory>
 #include <thread>
@@ -58,7 +58,7 @@ static void on_disconnect()
 
 static void setup(imf::Loop *loop)
 {
-	std::string ip = "192.168.9.86";
+	std::string ip = "10.98.32.1";
 	imf::SspClient * client = new imf::SspClient(ip, loop, 0x400000);
 	client->init();
 
